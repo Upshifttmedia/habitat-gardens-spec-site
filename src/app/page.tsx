@@ -127,20 +127,18 @@ function HeroSection() {
           Santa Cruz, CA · Ecological Landscape Design Since 2004
         </motion.p>
 
-        <h1 className="font-fraunces font-light text-wheat text-[clamp(2.8rem,8vw,5.5rem)] leading-tight max-w-3xl mb-6">
-          <motion.span
-            variants={staggerContainer}
-            initial="hidden"
-            animate="visible"
-            className="flex flex-wrap gap-x-4"
-          >
-            {words.map((word, i) => (
-              <motion.span key={i} variants={wordVariant}>
-                {word}
-              </motion.span>
-            ))}
-          </motion.span>
-        </h1>
+        <motion.h1
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="font-fraunces font-light text-wheat text-[clamp(2.8rem,8vw,5.5rem)] leading-tight max-w-3xl mb-6 flex flex-wrap gap-x-[0.3em]"
+        >
+          {words.map((word, i) => (
+            <motion.span key={i} variants={wordVariant}>
+              {word}
+            </motion.span>
+          ))}
+        </motion.h1>
 
         <motion.p
           variants={fadeUp}
