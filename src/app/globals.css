@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest: #2F3B26;
+  --forest-light: #3D4A32;
+  --wheat: #F5EFE0;
+  --wheat-dim: #ECE4D2;
+  --amber: #D4972C;
+  --terracotta: #B6562F;
+  --fern: #7C8A52;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5EFE0;
+  color: #2F3B26;
+}
